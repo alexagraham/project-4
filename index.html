@@ -1,1 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timeline of the Effect of teh Pandemic on Sports</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- link to script.js - make sure to defer -->
+    <script src="./script.js" defer></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript">
+      // Load the Visualization API and the corechart package.
+      google.charts.load("current", { packages: ["corechart"] });
 
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn("string", "Topping");
+        data.addColumn("number", "Sales");
+        data.addRows([
+          ["2003", 43.4],
+          ["2005", 64.8],
+          ["2007", 100.4],
+          ["2009", 105.9],
+          ["2011", 115.5],
+          ["2013", 62.8],
+          ["2015", 35.4],
+          ["2017", 25.0],
+        ]);
+
+        // Set chart options
+        var options = {
+          title: "Worldwide Digital Camera Sales 2003-2017 (by millions)",
+          width: 400,
+          height: 300,
+        };
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.BarChart(
+          document.getElementById("chart_div")
+        );
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!--slide 1 content-->
+      <div id="one" class="mySlides fade">
+        <div class="slide-content">
+          <button id="openModal">CITATIONS</button>
+          <div></div>
+          <div id="title">
+            <h1 id="name" onclick="focusName()">
+              Crash Course on the History of Photography.
+            </h1>
+          </div>
+        </div>
+      </div>
+      <!--slide 2 content-->
+      <div id="two" class="mySlides fade">
+        <div class="slide-content">
+          <div>
+            <div>
+              <h1 class="year">1826.</h1>
+              <p class="p">
+                Joseph Niepce is known as the first to produce permanent photo
+                (shown right). He used a portable camera obscura to expose a
+                pewter plate coated with bitumen to light. This would the first
+                recorded image that did not fade quickly and would be what we
+                consider the beginnings of photography.
+              </p>
+            </div>
+          </div>
+          <div class="two-pics">
+            <img
+              id="slide-two-face"
+              src="./images/niepce.jpg"
+              width="50%"
+              alt="Joseph Niepce"
+            />
+            <img
+              id="slide-two-landscape"
+              src="./images/perm-photo.jpg"
+              width="50%"
+              alt="first permanent photo"
+            />
+          </div>
+        </div>
+      </div>
+      <!--slide 3 content-->
+      <div id="three" class="mySlides fade">
+        <div class="slide-content">
+          <div>
+            <h1 class="year">1839.</h1>
+            <p class="p">
+              Louis Daguerre produced the first practical photographic process,
+              calling it the daguerreotype. It used mirror-like images on a
+              copper plate and developed photos with mercury. This would be the
+              forerunner of modern film. Play the video to learn more about the
+              daguerreotype.
+            </p>
+          </div>
+          <div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                height: 100%;
+                padding-bottom: 10px;
+              "
+            >
+              <div class="container">
+                <div class="aspect-ratio">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/N0Ambe4FwQk?start=78"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen=""
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--slide 4 content-->
+      <div id="four" class="mySlides fade">
+        <div class="slide-content">
+          <div>
+            <h1 class="year">1841.</h1>
+            <p class="p">
+              An Englishman named William Talbot, who had been working on
+              photography for a few years, developed a new process using paper
+              instead of copper plates. He developed the images using gallic
+              acid. This Calotype process was the first introduction to
+              "paper-negative photo technology".
+            </p>
+          </div>
+          <div>
+            <img
+              id="slide-four-image"
+              src="./images/calotype.jpg"
+              width="100%"
+              alt="calotype"
+            />
+          </div>
+        </div>
+      </div>
+      <!--slide 5 content-->
+      <div id="five" class="mySlides fade">
+        <div class="slide-content">
+          <div>
+            <h1 class="year">1860.</h1>
+            <p class="p">
+              Matthew Brady was the first to photograph an American president.
+              He took a picture of Abraham Lincoln visiting New York. While
+              Lincoln had previously been dismissed in his campaign as little
+              more than a bumpkin, Brady’s photograph of Lincoln in a smart suit
+              helped give him a sophisticated look which helped him gain
+              support.
+            </p>
+          </div>
+          <div id="slide-five-img-div">
+            <!--border: 10px solid #E0C4A6;-->
+            <img
+              id="slide-five-image"
+              src="https://thumbs-prod.si-cdn.com/EwjUef7JihMUfCk-lKBEZ7-PqrM=/fit-in/1072x0/https://public-media.si-cdn.com/filer/3e/09/3e095039-3fde-497e-b4bf-6af366b72fc9/npg_96_139-lincoln-r.jpg"
+              width="75%"
+              alt="lincoln"
+            />
+          </div>
+        </div>
+      </div>
+      <!--slide 6 content-->
+      <div id="six" class="mySlides fade">
+        <div class="slide-content">
+          <div>
+            <h1 class="year">1877.</h1>
+            <p class="p">
+              Eadweard Muybridge developed the first camera shutter, allowing
+              him to photograph images in motion. Before this, the subject had
+              to be still for long periods of time. Muybridge was comissioned by
+              Leland Stanford to capture his horses in motion, which would be
+              conveniently titled as "The Horse in Motion".
+            </p>
+          </div>
+          <div id="imgo">
+            <div id="horse-div">
+              <img
+                class="horse-1"
+                src="./images/horse-individs/horse-1.png"
+                alt="horse one"
+              />
+              <img
+                class="horse-2"
+                src="./images/horse-individs/horse-2.png"
+                alt="horse two"
+              />
+              <img
+                class="horse-3"
+                src="./images/horse-individs/horse-3.png"
+                alt="horse three"
+              />
+              <img
+                class="horse-4"
+                src="./images/horse-individs/horse-4.png"
+                alt="horse four"
+              />
+              <img
+                class="horse-5"
+                src="./images/horse-individs/horse-5.png"
+                alt="horse five"
+              />
+              <img
+                class="horse-6"
+                src="./images/horse-individs/horse-6.png"
+                alt="horse six"
+              />
+              <img
+                class="horse-7"
+                src="./images/horse-individs/horse-7.png"
+                alt="horse seven"
+              />
+              <img
+                class="horse-8"
+                src="./images/horse-individs/horse-8.png"
+                alt="horse eight"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--slide 7 content-->
+      <div id="seven" class="mySlides fade">
+        <div class="slide-content">
+          <div>
+            <h1 class="year">1887.</h1>
+            <p class="p">
+              George Eastman had been in the camera business for several years
+              before he developed Kodak. He trademarked the brand, and it
+              quickly caught on. This self-contained box camera that held 100
+              film exposures and was the first camera inexpensive enough for the
+              average person to afford.
+            </p>
+          </div>
+          <div id="slide-seven-div">
+            <img
+              id="slide-seven-image"
+              src="./images/kodak.jpg"
+              width="100%"
+              alt="kodak camera"
+            />
+          </div>
+        </div>
+      </div>
+      <!--slide 8 content-->
+      <div id="eight" class="mySlides fade">
+        <div class="slide-content">
+          <div>
+            <h1 class="year">1895.</h1>
+            <p class="p">
+              A German named Wilhelm Roentgen invented a type of photograph that
+              would revolutionize the medical world. This photograph captures
+              dense regions beneath the surface to reveal what our bones look
+              like. He named it the x-ray. Press the button below to take an x-
+              ray picture.
+            </p>
+            <!-- Rectangular switch for x ray -->
+            <label class="switch">
+              <input id="checkbox" type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            <div style="position: relative; height: 75%; width: 75%">
+              <img
+                id="slide-eight-torso"
+                class="active"
+                src="./images/torso.png"
+                width="100%"
+                alt="torso"
+              />
+              <img
+                id="slide-eight-x-ray"
+                src="./images/torso-real.jpeg"
+                width="100%"
+                alt="x-ray"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--slide 9 content-->
+      <div id="nine" class="mySlides fade">
+        <div class="slide-content">
+          <div>
+            <h1 class="year">1907.</h1>
+            <p class="p">
+              Up until this point, photographs were in black and white. Auguste
+              and Louis Lumiere introduced the Autochrome, the first color
+              camera available to the public. Click the button below to give the
+              black and white picture some color!
+            </p>
+            <button id="nine-button" onclick="colorize()">
+              Colorize the Image
+            </button>
+          </div>
+          <div id="slide-nine-img-div">
+            <img
+              id="slide-nine-image"
+              src="https://www.iter.org/img/resize-900-90/www/content/com/Lists/Stories/Attachments/270/ciotat2.jpg"
+              width="100%"
+              alt="Lumiere brothers"
+            />
+          </div>
+        </div>
+      </div>
+      <!--slide 10 content-->
+      <div id="ten" class="mySlides fade">
+        <div class="slide-content">
+          <div>
+            <h1 class="year">1925-1963.</h1>
+            <p class="p">
+              Over the next forty years the camera evolved at a fast pace.
+              Photocopying became possible, the zoom lens was developed, the
+              Polaroid was released, and the point-and-shoot camera was put out
+              by Kodak. Shake the polaroid picture to help the image develop!
+            </p>
+          </div>
+          <div class="card">
+            <!--shake image polaroid to make it develop-->
+            <img
+              id="slide-ten-before"
+              src="./images/polaroid-before.jpg"
+              width="100%"
+              alt="polaroid-before"
+            />
+            <img
+              class="slide-ten-after"
+              src="./images/polaroid-after.jpg"
+              alt="polaroid-after"
+            />
+          </div>
+        </div>
+      </div>
+      <!--slide 11 content-->
+      <div id="eleven" class="mySlides fade">
+        <div class="slide-content">
+          <div>
+            <h1 class="year">1992-2000s.</h1>
+            <p class="p">
+              In 1992 Kodak introduced a revolutionary development that would
+              change the face of photography again. Storing pictures on a CD led
+              to digital film including digital cameras, digital picture frames,
+              and cameras on phones and tablets.
+            </p>
+          </div>
+          <div id="eleven-imgs">
+            <img
+              class="collage1"
+              src="./images/collage1.jpg"
+              width="100%"
+              alt="sony digital camers"
+            />
+            <img
+              class="collage2"
+              src="./images/collage2.jpg"
+              width="100%"
+              alt="smart phones"
+            />
+            <img
+              class="collage3"
+              src="./images/collage3.jpg"
+              width="100%"
+              alt="smart tablets"
+            />
+            <img
+              class="collage4"
+              src="./images/collage4.jpg"
+              width="100%"
+              alt="CDs"
+            />
+          </div>
+        </div>
+      </div>
+      <!--slide 12 content-->
+      <div id="twelve" class="mySlides fade">
+        <div class="slide-content">
+          <div>
+            <h1 class="year">?.</h1>
+            <p class="twelve">
+              Moving forward, we have entered a digital age where digital
+              cameras have taken a backseat to multipurpose devices (especially
+              smartphones) The graph illustrates the downward trend in digital
+              camera sales which happens to coincide with the increased
+              prevalence of smart phone use. We can only guess what the next new
+              trend will be...
+            </p>
+          </div>
+          <div>
+            <div id="chart_div"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- The dots/circles -->
+      <div id="dots" style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+        <span class="dot" onclick="currentSlide(11)"></span>
+        <span class="dot" onclick="currentSlide(12)"></span>
+      </div>
+    </div>
+  </body>
+
+  <!--logo-->
+  <footer class="logo">
+    <a href="www.nataliemcaleer.com" width="50%">
+      <img src="./images/white logo.png" alt="logo" />
+    </a>
+  </footer>
+
+  <div id="modal">
+    <div class="modal-content">
+      <p>
+        https://dujye7n3e5wjl.cloudfront.net/photographs/1080-tall/time-100-influential-photos-joseph-niepce-view-from-window-le-gras-1.jpg
+      </p>
+      <p>
+        https://cdn-s-www.lejsl.com/images/ECC5A757-548C-4DFE-9DC9-15D1C12EF0ED/NW_detail_M/title-1576680650.jpg
+      </p>
+      <p>
+        https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5a638921-a669-4e35-9fb6-aebda081ee8e/d1xxc6-3997562b-6eef-46f0-9757-e55841cae8d1.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVhNjM4OTIxLWE2NjktNGUzNS05ZmI2LWFlYmRhMDgxZWU4ZVwvZDF4eGM2LTM5OTc1NjJiLTZlZWYtNDZmMC05NzU3LWU1NTg0MWNhZThkMS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.QynvKqSX99vJg5--K660CPJVtRR0RiMrn_WkJ4Ev50Q
+      </p>
+      <p>
+        https://austincamera.com/wp-content/uploads/2018/10/analogue-aperture-black-and-white-569098.jpg
+      </p>
+      <p>
+        https://www.smithsonianmag.com/smithsonian-institution/how-one-mathew-brady-photograph-may-have-helped-elect-abraham-lincoln-180963839/
+      </p>
+      <p>
+        https://image.shutterstock.com/image-vector/human-torso-on-black-background-260nw-365145056.jpg
+      </p>
+      <p>https://www.bl.uk/collection-items/invention-of-photography</p>
+      <p>https://www.metmuseum.org/toah/hd/tlbt/hd_tlbt.htm</p>
+      <p>
+        https://theconversation.com/curious-kids-how-do-x-rays-see-inside-you-85895
+      </p>
+      <button id="closeModal">Close</button>
+    </div>
+  </div>
+</html>
