@@ -17,52 +17,19 @@
 
       // Set a callback to run when the Google Visualization API is loaded.
       google.charts.setOnLoadCallback(drawChart);
-
-      // Callback that creates and populates a data table,
-      // instantiates the pie chart, passes in the data and
-      // draws it.
-      function drawChart() {
-        // Create the data table.
-        var data = new google.visualization.DataTable();
-        data.addColumn("string", "Topping");
-        data.addColumn("number", "Sales");
-        data.addRows([
-          ["2003", 43.4],
-          ["2005", 64.8],
-          ["2007", 100.4],
-          ["2009", 105.9],
-          ["2011", 115.5],
-          ["2013", 62.8],
-          ["2015", 35.4],
-          ["2017", 25.0],
-        ]);
-
-        // Set chart options
-        var options = {
-          title: "Worldwide Digital Camera Sales 2003-2017 (by millions)",
-          width: 400,
-          height: 300,
-        };
-
-        // Instantiate and draw our chart, passing in some options.
-        var chart = new google.visualization.BarChart(
-          document.getElementById("chart_div")
-        );
-        chart.draw(data, options);
-      }
     </script>
   </head>
   <body>
     <!-- Slideshow container -->
     <div class="slideshow-container">
       <!--slide 1 content-->
-      <div id="one" class="mySlides fade">
+      <div id="home" class="mySlides fade">
         <div class="slide-content">
           <button id="openModal">CITATIONS</button>
           <div></div>
           <div id="title">
             <h1 id="name" onclick="focusName()">
-              Crash Course on the History of Photography.
+              Timeline of the Effect of the Pandemic on Sports.
             </h1>
           </div>
         </div>
@@ -72,28 +39,21 @@
         <div class="slide-content">
           <div>
             <div>
-              <h1 class="year">1826.</h1>
+              <h1 class="date">Friday, March 6th</h1>
               <p class="p">
-                Joseph Niepce is known as the first to produce permanent photo
-                (shown right). He used a portable camera obscura to expose a
-                pewter plate coated with bitumen to light. This would the first
-                recorded image that did not fade quickly and would be what we
-                consider the beginnings of photography.
+                The John's Hopkins versus Yeshiva basketball game was played
+                without a single fan in the stadium due to one of the Yeshiva
+                player's testing positive for Covid-19. Coronavirus was not a
+                major threat to the sporting world yet.
               </p>
             </div>
           </div>
           <div class="two-pics">
             <img
-              id="slide-two-face"
-              src="./images/niepce.jpg"
-              width="50%"
-              alt="Joseph Niepce"
-            />
-            <img
-              id="slide-two-landscape"
-              src="./images/perm-photo.jpg"
-              width="50%"
-              alt="first permanent photo"
+              id="slide-two-covid-germ"
+              src="./images/project 4-3.jpg"
+              width="100%"
+              alt="covid germ"
             />
           </div>
         </div>
@@ -102,13 +62,14 @@
       <div id="three" class="mySlides fade">
         <div class="slide-content">
           <div>
-            <h1 class="year">1839.</h1>
+            <h1 class="date">Saturday, March 7th</h1>
             <p class="p">
-              Louis Daguerre produced the first practical photographic process,
-              calling it the daguerreotype. It used mirror-like images on a
-              copper plate and developed photos with mercury. This would be the
-              forerunner of modern film. Play the video to learn more about the
-              daguerreotype.
+              The Golden State Warriors hosted the Philadelphia 76ers in San
+              Francisco. They still had fans at their games as again,
+              Coronavirus was not quite spreading faster then light yet. Golden
+              State did however, put signs up everywhere warning fans that
+              attending the game might increase their risk of contracting
+              Covid-19.
             </p>
           </div>
           <div>
@@ -122,14 +83,12 @@
             >
               <div class="container">
                 <div class="aspect-ratio">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/N0Ambe4FwQk?start=78"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen=""
-                  ></iframe>
+                  <img
+                    id="slide-four-image"
+                    src="./images/project 4-7.jpg"
+                    width="100%"
+                    alt="basketball"
+                  />
                 </div>
               </div>
             </div>
@@ -140,21 +99,21 @@
       <div id="four" class="mySlides fade">
         <div class="slide-content">
           <div>
-            <h1 class="year">1841.</h1>
+            <h1 class="date">Sunday, March 8th</h1>
             <p class="p">
-              An Englishman named William Talbot, who had been working on
-              photography for a few years, developed a new process using paper
-              instead of copper plates. He developed the images using gallic
-              acid. This Calotype process was the first introduction to
-              "paper-negative photo technology".
+              The Indian Wells tennis tournament is often called the fifth major
+              of tennis because it is such a big tournament. Players, including
+              Venus Williams and Rafael Nadal, were already on site practicing
+              when Indian Wells became the first major sporting event to cancel
+              to try to hault the spread of Covid-19.
             </p>
           </div>
           <div>
             <img
               id="slide-four-image"
-              src="./images/calotype.jpg"
+              src="./images/project 4-4.jpg"
               width="100%"
-              alt="calotype"
+              alt="Indian wells tennis stadium"
             />
           </div>
         </div>
@@ -163,23 +122,23 @@
       <div id="five" class="mySlides fade">
         <div class="slide-content">
           <div>
-            <h1 class="year">1860.</h1>
+            <h1 class="date">Monday, March 9th</h1>
             <p class="p">
-              Matthew Brady was the first to photograph an American president.
-              He took a picture of Abraham Lincoln visiting New York. While
-              Lincoln had previously been dismissed in his campaign as little
-              more than a bumpkin, Brady’s photograph of Lincoln in a smart suit
-              helped give him a sophisticated look which helped him gain
-              support.
+              Most sporting seasons still were not cancelled yet, but the MLB,
+              NBA, NHL, and MLS all closed their locker room to outside
+              personell. This meant no press and no one who didn't work directly
+              or closely with the team. The sporting world sitll seemed pretty
+              normal at this point and most assumed that the Coronavirus would
+              just blow over.
             </p>
           </div>
           <div id="slide-five-img-div">
             <!--border: 10px solid #E0C4A6;-->
             <img
               id="slide-five-image"
-              src="https://thumbs-prod.si-cdn.com/EwjUef7JihMUfCk-lKBEZ7-PqrM=/fit-in/1072x0/https://public-media.si-cdn.com/filer/3e/09/3e095039-3fde-497e-b4bf-6af366b72fc9/npg_96_139-lincoln-r.jpg"
+              src="./images/project 4-5.jpg"
               width="75%"
-              alt="lincoln"
+              alt="NHL"
             />
           </div>
         </div>
@@ -188,80 +147,48 @@
       <div id="six" class="mySlides fade">
         <div class="slide-content">
           <div>
-            <h1 class="year">1877.</h1>
+            <h1 class="date">Tuesday, March 10th</h1>
             <p class="p">
-              Eadweard Muybridge developed the first camera shutter, allowing
-              him to photograph images in motion. Before this, the subject had
-              to be still for long periods of time. Muybridge was comissioned by
-              Leland Stanford to capture his horses in motion, which would be
-              conveniently titled as "The Horse in Motion".
+              This was the day that the Ivy League became the first NCAA
+              conference to not play any of their winter sports for the
+              remainder of the winter season. From the standpoint of a
+              student-athlete, no one understood why. Not many people knew how
+              serious the Coronavirus actually was, and this seemed like an
+              overreaction. We would soon see in days, and months to come that
+              this was not an overreaction at all. Many tournaments across other
+              leagues and conferences were announcing play without fans.
             </p>
           </div>
-          <div id="imgo">
-            <div id="horse-div">
-              <img
-                class="horse-1"
-                src="./images/horse-individs/horse-1.png"
-                alt="horse one"
-              />
-              <img
-                class="horse-2"
-                src="./images/horse-individs/horse-2.png"
-                alt="horse two"
-              />
-              <img
-                class="horse-3"
-                src="./images/horse-individs/horse-3.png"
-                alt="horse three"
-              />
-              <img
-                class="horse-4"
-                src="./images/horse-individs/horse-4.png"
-                alt="horse four"
-              />
-              <img
-                class="horse-5"
-                src="./images/horse-individs/horse-5.png"
-                alt="horse five"
-              />
-              <img
-                class="horse-6"
-                src="./images/horse-individs/horse-6.png"
-                alt="horse six"
-              />
-              <img
-                class="horse-7"
-                src="./images/horse-individs/horse-7.png"
-                alt="horse seven"
-              />
-              <img
-                class="horse-8"
-                src="./images/horse-individs/horse-8.png"
-                alt="horse eight"
-              />
-            </div>
-          </div>
+          <img
+            id="slide-four-image"
+            src="./images/project 4-6.jpg"
+            width="100%"
+            alt="Ivy league basketball"
+          />
         </div>
       </div>
       <!--slide 7 content-->
       <div id="seven" class="mySlides fade">
         <div class="slide-content">
           <div>
-            <h1 class="year">1887.</h1>
+            <h1 class="date">Wednesday, March 11th</h1>
             <p class="p">
-              George Eastman had been in the camera business for several years
-              before he developed Kodak. He trademarked the brand, and it
-              quickly caught on. This self-contained box camera that held 100
-              film exposures and was the first camera inexpensive enough for the
-              average person to afford.
+              The state of the pandemic became real to most players and
+              athletes. Most leagues announced that their games would be played
+              with no fans. The Ivy league, ahead of everyone again, went agead
+              and cancelled their spring season as well. This now made other
+              conferences, including our ACC, worry that they would soon follow.
+              The NHL played five games that night, most major collegiate
+              conferences announced they would continue play without fans, but
+              the NBA had suspended their season.
             </p>
           </div>
           <div id="slide-seven-div">
             <img
               id="slide-seven-image"
-              src="./images/kodak.jpg"
+              src="./images/project 4-12.jpg"
               width="100%"
-              alt="kodak camera"
+              alt="NBA"
             />
           </div>
         </div>
@@ -270,13 +197,16 @@
       <div id="eight" class="mySlides fade">
         <div class="slide-content">
           <div>
-            <h1 class="year">1895.</h1>
+            <h1 class="date">Thursday, March 12th</h1>
             <p class="p">
-              A German named Wilhelm Roentgen invented a type of photograph that
-              would revolutionize the medical world. This photograph captures
-              dense regions beneath the surface to reveal what our bones look
-              like. He named it the x-ray. Press the button below to take an x-
-              ray picture.
+              This is the day everything took a turn downhill. The ACC and most
+              other major conferences suspended their seasons. The ATP tennis
+              tour suspended tournament play. The MLS suspended its season. The
+              PGA tour cancelled its season. Players and athletes were on planes
+              or at competition events and the plug was being pulled on their
+              competition. Professional athletes were starting to test positive
+              for Coronvirus and sports would not be the same for a very long
+              time.
             </p>
             <!-- Rectangular switch for x ray -->
             <label class="switch">
@@ -289,18 +219,13 @@
           >
             <div style="position: relative; height: 75%; width: 75%">
               <img
-                id="slide-eight-torso"
+                id="slide-eight-runner"
                 class="active"
-                src="./images/torso.png"
+                src="./images/project 4-8.jpg"
                 width="100%"
-                alt="torso"
+                alt="runner"
               />
-              <img
-                id="slide-eight-x-ray"
-                src="./images/torso-real.jpeg"
-                width="100%"
-                alt="x-ray"
-              />
+              
             </div>
           </div>
         </div>
@@ -309,12 +234,14 @@
       <div id="nine" class="mySlides fade">
         <div class="slide-content">
           <div>
-            <h1 class="year">1907.</h1>
+            <h1 class="date">Friday, March 13th</h1>
             <p class="p">
-              Up until this point, photographs were in black and white. Auguste
-              and Louis Lumiere introduced the Autochrome, the first color
-              camera available to the public. Click the button below to give the
-              black and white picture some color!
+              In typical Friday the 13th fashion, this day was not a good one
+              for the sporting world. The Masters was postponed, NASCAR was
+              suspended, the Boston Marathon was postponed. Late the night
+              before all other major leagues had cancelled their season. It was
+              now clear to everyone that the pandemic was real and that the
+              world was about to change.
             </p>
             <button id="nine-button" onclick="colorize()">
               Colorize the Image
@@ -323,9 +250,9 @@
           <div id="slide-nine-img-div">
             <img
               id="slide-nine-image"
-              src="https://www.iter.org/img/resize-900-90/www/content/com/Lists/Stories/Attachments/270/ciotat2.jpg"
+              src="./images/project 4-9.dms"
               width="100%"
-              alt="Lumiere brothers"
+              alt="track"
             />
           </div>
         </div>
@@ -334,86 +261,26 @@
       <div id="ten" class="mySlides fade">
         <div class="slide-content">
           <div>
-            <h1 class="year">1925-1963.</h1>
+            <h1 class="date">Today</h1>
             <p class="p">
-              Over the next forty years the camera evolved at a fast pace.
-              Photocopying became possible, the zoom lens was developed, the
-              Polaroid was released, and the point-and-shoot camera was put out
-              by Kodak. Shake the polaroid picture to help the image develop!
+              Most leagues and sports are back competing with either zero or
+              limited fan attendance. The sporting world is adjusting to the new
+              normal and hopefully will be back to normal soon.
             </p>
           </div>
           <div class="card">
             <!--shake image polaroid to make it develop-->
             <img
               id="slide-ten-before"
-              src="./images/polaroid-before.jpg"
+              src="./images/project 4-10.png"
               width="100%"
               alt="polaroid-before"
             />
             <img
               class="slide-ten-after"
-              src="./images/polaroid-after.jpg"
+              src="./images/project 4-10.png"
               alt="polaroid-after"
             />
-          </div>
-        </div>
-      </div>
-      <!--slide 11 content-->
-      <div id="eleven" class="mySlides fade">
-        <div class="slide-content">
-          <div>
-            <h1 class="year">1992-2000s.</h1>
-            <p class="p">
-              In 1992 Kodak introduced a revolutionary development that would
-              change the face of photography again. Storing pictures on a CD led
-              to digital film including digital cameras, digital picture frames,
-              and cameras on phones and tablets.
-            </p>
-          </div>
-          <div id="eleven-imgs">
-            <img
-              class="collage1"
-              src="./images/collage1.jpg"
-              width="100%"
-              alt="sony digital camers"
-            />
-            <img
-              class="collage2"
-              src="./images/collage2.jpg"
-              width="100%"
-              alt="smart phones"
-            />
-            <img
-              class="collage3"
-              src="./images/collage3.jpg"
-              width="100%"
-              alt="smart tablets"
-            />
-            <img
-              class="collage4"
-              src="./images/collage4.jpg"
-              width="100%"
-              alt="CDs"
-            />
-          </div>
-        </div>
-      </div>
-      <!--slide 12 content-->
-      <div id="twelve" class="mySlides fade">
-        <div class="slide-content">
-          <div>
-            <h1 class="year">?.</h1>
-            <p class="twelve">
-              Moving forward, we have entered a digital age where digital
-              cameras have taken a backseat to multipurpose devices (especially
-              smartphones) The graph illustrates the downward trend in digital
-              camera sales which happens to coincide with the increased
-              prevalence of smart phone use. We can only guess what the next new
-              trend will be...
-            </p>
-          </div>
-          <div>
-            <div id="chart_div"></div>
           </div>
         </div>
       </div>
@@ -434,8 +301,7 @@
         <span class="dot" onclick="currentSlide(8)"></span>
         <span class="dot" onclick="currentSlide(9)"></span>
         <span class="dot" onclick="currentSlide(10)"></span>
-        <span class="dot" onclick="currentSlide(11)"></span>
-        <span class="dot" onclick="currentSlide(12)"></span>
+   
       </div>
     </div>
   </body>
@@ -450,27 +316,9 @@
   <div id="modal">
     <div class="modal-content">
       <p>
-        https://dujye7n3e5wjl.cloudfront.net/photographs/1080-tall/time-100-influential-photos-joseph-niepce-view-from-window-le-gras-1.jpg
+        https://www.washingtonpost.com/sports/2020/03/14/sports-cancellations-timeline-coronavirus/?arc404=true
       </p>
-      <p>
-        https://cdn-s-www.lejsl.com/images/ECC5A757-548C-4DFE-9DC9-15D1C12EF0ED/NW_detail_M/title-1576680650.jpg
-      </p>
-      <p>
-        https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5a638921-a669-4e35-9fb6-aebda081ee8e/d1xxc6-3997562b-6eef-46f0-9757-e55841cae8d1.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVhNjM4OTIxLWE2NjktNGUzNS05ZmI2LWFlYmRhMDgxZWU4ZVwvZDF4eGM2LTM5OTc1NjJiLTZlZWYtNDZmMC05NzU3LWU1NTg0MWNhZThkMS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.QynvKqSX99vJg5--K660CPJVtRR0RiMrn_WkJ4Ev50Q
-      </p>
-      <p>
-        https://austincamera.com/wp-content/uploads/2018/10/analogue-aperture-black-and-white-569098.jpg
-      </p>
-      <p>
-        https://www.smithsonianmag.com/smithsonian-institution/how-one-mathew-brady-photograph-may-have-helped-elect-abraham-lincoln-180963839/
-      </p>
-      <p>
-        https://image.shutterstock.com/image-vector/human-torso-on-black-background-260nw-365145056.jpg
-      </p>
-      <p>https://www.bl.uk/collection-items/invention-of-photography</p>
-      <p>https://www.metmuseum.org/toah/hd/tlbt/hd_tlbt.htm</p>
-      <p>
-        https://theconversation.com/curious-kids-how-do-x-rays-see-inside-you-85895
+   
       </p>
       <button id="closeModal">Close</button>
     </div>
