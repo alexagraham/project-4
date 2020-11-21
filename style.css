@@ -8,13 +8,13 @@ body {
   background: #0088b0;
 }
 
-/* Slideshow container */
+
 .slideshow-container {
   position: relative;
   margin: auto;
 }
 
-/* Hide the images by default */
+
 .mySlides {
   height: 100vh;
   display: flex;
@@ -22,7 +22,7 @@ body {
   align-items: center;
 }
 
-/* Next & previous buttons */
+
 .prev,
 .next {
   cursor: pointer;
@@ -39,19 +39,18 @@ body {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: #0088b0;
 }
 
-/* Number text (1/3 etc) */
+
 .numbertext {
   color: blue;
   font-size: 12px;
@@ -60,7 +59,7 @@ body {
   top: 0;
 }
 
-/* The rectangle top navigation */
+/
 .dot {
   cursor: pointer;
   height: 20px;
@@ -77,7 +76,7 @@ body {
   background-color: #717171;
 }
 
-/* Fading animation */
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -249,7 +248,7 @@ body {
   color: rgb(25, 51, 63);
 }
 
-/*mobile styling*/
+
 @media (max-width: 767px) {
   .slide-content {
     display: block;
@@ -350,21 +349,9 @@ body {
     position: relative;
   }
 
-  .logo {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-  }
+  
 
-  .logo > a > img {
-    display: flex;
-    position: relative;
-    margin: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 75%;
-  }
+  
 
   #slide-two-landscape {
     display: block;
@@ -606,7 +593,7 @@ iframe {
   left: 0;
 }
 
-/*slide 8*/
+
 #slide-eight-torso.active {
   opacity: 1;
 }
@@ -614,7 +601,7 @@ iframe {
   opacity: 1;
 }
 
-/*slide 9*/
+
 
 #slide-nine-img-div {
   display: flex;
@@ -622,13 +609,13 @@ iframe {
   justify-content: center;
 }
 
-/*slide 10 shake style*/
+
 
 .card:hover {
-  /* Start the shake animation and make the animation last for 0.5 seconds */
+  
   animation: shake 1s;
 
-  /* When the animation is finished, start again */
+ 
   animation-iteration-count: infinite;
 }
 
@@ -668,7 +655,7 @@ iframe {
   }
 }
 
-/*slide 11 photo collage*/
+
 img.collage1 {
   position: absolute;
   left: 54%;
@@ -697,19 +684,9 @@ img.collage4 {
 }
 
 
-/*logo style*/
-.logo {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 5px;
-}
 
-.logo > img {
-  height: 75%;
-}
 
-/* The switch - the box around the slider */
+
 .switch {
   position: relative;
   display: inline-block;
@@ -717,14 +694,14 @@ img.collage4 {
   height: 70px;
 }
 
-/* Hide default HTML checkbox */
+
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* The slider */
+
 .slider {
   position: absolute;
   cursor: pointer;
@@ -842,10 +819,7 @@ iframe {
     top: 0;
   }
 
-  .logo {
-    margin: 0px;
-    padding: 10px;
-  }
+  
 
   #chart_div {
     width: 200px;
